@@ -36,12 +36,12 @@ export default function Header({}: Props): ReactElement {
         transition={{ duration: 1.5 }}
       >
         <SocialIcon
-          className="cursor-pointer"
+          className="cursor-pointer motion-safe:animate-bounce h-5 w-5 mr-3 ... hover:animate-spin"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-grey-400">
+        <p className="uppercase hidden md:inline-flex text-sm text-grey-400 ">
           Get In Touch
         </p>
       </motion.div>
