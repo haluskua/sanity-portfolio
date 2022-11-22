@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
         <h2 className="text-sm uppercase pb-2 text-[#f4faff] tracking-[14px] py-4">
           Frontend Developer
         </h2>
-        <h1 className="text-1xl lg:text-2xl font-semibold mb-2">
+        <h1 className="text-1xl lg:text-2xl uppercase font-semibold mb-2">
           <span className="mr-3 tracking-[1px]">{text}</span>
           <Cursor cursorColor="pink" />
         </h1>
