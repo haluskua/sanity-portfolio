@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
         className="relative rounded-full h-48 w-48 mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase pb-2 text-[#f4faff] tracking-[14px] py-4">
+        <h2 className="text-sm uppercase pb-2 text-[#f4faff] tracking-[10px] md:tracking-[14px] py-4">
           Frontend Developer
         </h2>
         <h1 className="text-1xl lg:text-2xl uppercase font-semibold mb-2">

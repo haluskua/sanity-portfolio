@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-// http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdad.fe2d3315.jpg&w=3840&q=75
+const photo =
+  "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdad.fe2d3315.jpg&w=3840&q=75";
 
 type Props = {};
 
@@ -15,9 +16,25 @@ const About = (props: Props) => {
         initial={{ x: -200, opacity: 0, scale: 0 }}
         whileInView={{ x: 0, opacity: 1, scale: 0.51 }}
         transition={{ duration: 1.2 }}
-        src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdad.fe2d3315.jpg&w=3840&q=75"
+        src={photo}
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-w-64 md:h-95 xl:w-[500px] xl:h-[600px] "
       />
+      <div className="space-y-10 px-0 md:px-10 ">
+        <h4 className="text-4xl font-semibold">
+          Here is a
+          <span className="underline declaration-[#60a7e0] px-3">little</span>
+          background about me
+        </h4>
+        <p className="text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          nobis odio nemo mollitia velit, modi nostrum consequatur unde debitis
+          fuga excepturi, atque explicabo quis rem culpa earum laboriosam
+          excepturi aliquid id explicabo odio necessitatibus corrupti,
+          voluptates eligendi? Laudantium quam laborum unde ab enim non dolore,
+          ratione minus accusamus quasi asperiores omnis qui neque velit
+          inventore eveniet porro repellat molestiae, quaerat quis modi iure?
+        </p>
+      </div>
     </div>
   );
 };
