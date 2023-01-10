@@ -6,7 +6,7 @@ interface Props {}
 
 export default function Header({}: Props): ReactElement {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-25 xl:items-center p-5">
+    <header className=" bg-[#3333]/20 rounded-full sm:rounded-sm md:rounded-md drop-shadow-lg sm:filter-none sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-25 xl:items-center p-5">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export default function Header({}: Props): ReactElement {
         transition={{ duration: 1.5 }}
       >
         <SocialIcon
-          className="cursor-pointer motion-safe:animate-bounce h-5 w-5 mr-3 ... hover:animate-spin"
+          className="cursor-pointer  h-5 w-5 mr-3 ... hover:animate-spin"
           network="email"
           fgColor="gray"
           bgColor="transparent"
