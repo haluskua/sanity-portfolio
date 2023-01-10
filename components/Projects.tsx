@@ -12,7 +12,7 @@ const Projects = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#f4faff] text-2xl">
+      <h3 className="absolute top-10 uppercase tracking-[20px] text-[#f4faff] text-1.5xl xl:text-2xl font-bold">
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
@@ -63,8 +63,8 @@ const Projects = (props: Props) => {
         {/* projects */}
         {/* projects */}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#999571]/20 left-0 h-[450px] -skew-y-12">
-        RIPPLER
+      <div className="w-full absolute top-[30%] bg-[#998471]/20 left-0 h-[450px] -skew-y-12">
+        <h5 className="text-small text-[#291a1a]/70 px-10">OHK-Designs</h5>
       </div>
     </motion.div>
   );

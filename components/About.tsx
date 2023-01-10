@@ -9,7 +9,7 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <div className="h-screen relative flex flex-col space-y-4 justify-evenly mx-auto items-center text-center md:text-left md:flex-row max-w-7xl px-10 overflow-hidden ">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#f4faff] text-2xl">
+      <h3 className="absolute top-10 uppercase tracking-[20px] text-[#f4faff] text-1.5xl xl:text-2xl font-bold">
         About
       </h3>
       <motion.img

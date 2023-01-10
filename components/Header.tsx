@@ -36,7 +36,7 @@ export default function Header({}: Props): ReactElement {
         transition={{ duration: 1.5 }}
       >
         <SocialIcon
-          className="cursor-pointer  h-5 w-5 mr-3 ... hover:animate-spin"
+          className="cursor-pointer  h-5 w-5 mr-3 hover:animate-spin"
           network="email"
           fgColor="gray"
           bgColor="transparent"

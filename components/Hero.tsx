@@ -11,8 +11,8 @@ const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
       "Hi, The name's Ompa",
-      "The Guy-who-works-Construction",
-      "<ButLovesToCode />",
+      "I work in Construction",
+      "<ButLoveToCode />",
     ],
     loop: true,
     delaySpeed: 1700,
@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
         <h2 className="text-sm uppercase pb-2 text-[#f4faff] tracking-[10px] md:tracking-[14px] py-4">
           Frontend Developer
         </h2>
-        <h1 className="text-1xl lg:text-2xl uppercase font-semibold mb-2">
+        <h1 className="text-1xl lg:text-2xl  font-semibold mb-2">
           <span className="mr-3 tracking-[1px]">{text}</span>
           <Cursor cursorColor="pink" />
         </h1>
@@ -44,6 +44,9 @@ const Hero = (props: Props) => {
             <button className="heroButton">Skills</button>
           </Link>
           <Link href="#projects">
+            <button className="heroButton">Projects</button>
+          </Link>
+          <Link href="#contact">
             <button className="heroButton">Projects</button>
           </Link>
         </div>

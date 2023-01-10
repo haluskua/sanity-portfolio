@@ -6,4 +6,8 @@
   .heroButton {
     @apply text-sm px-6 py-2 border border-[#5794a3]/20 m-2 rounded-md text-[#e4e6ee] transition-all  hover:text-[#f7eded] hover:border-[#93c1e7] uppercase tracking-widest;
   }
+
+  .contactInput {
+    @apply outline-none bg-[#242424]/10 rounded-sm border-b px-6 py-4 text-[#5794a3]/20 border-[#50421e] text-[#fdffdb]  placeholder-gray-500 transition-all focus:border-[#f7abba]/40 hover:border-[#f7abba]/40;
+  }
 }
