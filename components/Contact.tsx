@@ -38,7 +38,7 @@ const Contact = (props: Props) => {
             <input
               placeholder="Email"
               className="contactInput tracking-wider"
-              type="text"
+              type="email"
             />
           </div>
           <input
