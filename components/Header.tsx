@@ -16,17 +16,17 @@ export default function Header({}: Props): ReactElement {
         {/* Social Icons*/}
         <SocialIcon
           url="https://www.linkedin.com/in/haluskua-77/"
-          fgColor="gray"
+          fgColor="#f7abbaab"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/haluskua-77/"
-          fgColor="gray"
+          fgColor="#f7abbaab"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/haluskua-77/"
-          fgColor="gray"
+          fgColor="#f7abbaab"
           bgColor="transparent"
         />
       </motion.div>
@@ -38,7 +38,7 @@ export default function Header({}: Props): ReactElement {
         <SocialIcon
           className="cursor-pointer  h-5 w-5 mr-3 hover:animate-spin"
           network="email"
-          fgColor="gray"
+          fgColor="#f7abbaab"
           bgColor="transparent"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-grey-400 ">
