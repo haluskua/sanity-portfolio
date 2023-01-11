@@ -26,7 +26,7 @@ const Projects = (props: Props) => {
                 y: -300,
                 opacity: 0,
               }}
-              transition={{ duration: 1.2 }}
+              transition={{ duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="flex "
@@ -44,7 +44,7 @@ const Projects = (props: Props) => {
             </motion.picture>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#9fd4ff]/50 ">
+                <span className="underline decoration-[#f7abba]/50 font-light ">
                   Case Study {i + 1} of {projects.length}:
                 </span>
                 Portfolio clone
