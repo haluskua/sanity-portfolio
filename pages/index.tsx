@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
@@ -34,6 +35,25 @@ const Home: NextPage = () => {
       </section>
       <section id="contact" className="snap-start"></section>
       <Contact />
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <picture className="flex items-center justify-center">
+              <source
+                srcSet="https://haluskua.github.io/mywebsite/img/room5-small.jpg"
+                type="image/webp"
+              />
+              <img
+                className=" object-cover rounded-full border-border-[#f4faff] w-12 h-14 md:w-20 md:h-20 xl:w-28 xl:h-28 border-2 filter group-hover:grayscale transition duration-300 ease-in-out"
+                src="https://haluskua.github.io/mywebsite/img/room5-small.jpg"
+                alt="Landscape picture"
+                width={100}
+                height={50}
+              />
+            </picture>
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };

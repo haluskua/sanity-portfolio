@@ -6,7 +6,7 @@ interface Props {}
 
 export default function Header({}: Props): ReactElement {
   return (
-    <header className=" bg-[#3333]/20 rounded-full sm:rounded-sm md:rounded-md drop-shadow-[#f7abba]-lg sm:filter-none sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-95 xl:items-center p-5">
+    <header className=" bg-[#3333]/20 rounded-full sm:rounded-sm md:rounded-md drop-shadow-[#f7abba]-lg sm:filter-none sticky top-0 flex items-start justify-between w-full mx-auto z-999999 xl:items-center p-5">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -34,14 +34,15 @@ export default function Header({}: Props): ReactElement {
         initial={{ x: 500, opacity: 0, scale: 0 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
+        className="flex flex-row items-center text-[#fff9f9] cursor-pointer rounded-full  p-2 bg-[#54dd67cc] hover:bg-[#f7abba] hover:text-white z-999999"
       >
         <SocialIcon
           className="cursor-pointer  h-5 w-5 mr-3 hover:animate-spin"
           network="email"
-          fgColor="#f7abbaab"
+          fgColor="#e9d0d5ab"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-grey-400 ">
+        <p className="uppercase hidden md:inline-flex text-sm hover:text-white ">
           Get In Touch
         </p>
       </motion.div>
