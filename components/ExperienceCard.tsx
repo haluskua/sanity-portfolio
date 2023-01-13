@@ -4,7 +4,7 @@ type Props = {};
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 p-10 flex-shrink-0 w-[500px] md:w-[600] xl:w-[900px] snap-center bg-[#302317]/20 hover:opacity-100 opacity-40 cursor-pointer duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 p-10 flex-shrink-0 w-[500px] md:w-[600] xl:w-[900px] snap-center bg-[#596f9c]/20 hover:opacity-100 opacity-40 cursor-pointer duration-200 overflow-hidden">
       <motion.img
         // initial={{ y: -100 }}
         // viewport={{ once: true }}

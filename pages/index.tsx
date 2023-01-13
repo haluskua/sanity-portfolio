@@ -11,7 +11,7 @@ import WorkExperience from "../components/WorkExperience";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[#8a6109] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-orange scrollbar-thumb-[#f7abba]/40 scrollbar-thumb-rounded-lg">
+    <div className="bg-[#0e131b] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar-thin  scrollbar-thumb-[#58494c]/40 scrollbar-thumb-rounded-lg ">
       <Head>
         <title>Gunter's Portfolio</title>
       </Head>
@@ -35,25 +35,26 @@ const Home: NextPage = () => {
       </section>
       <section id="contact" className="snap-start"></section>
       <Contact />
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            <picture className="flex items-center justify-center">
+
+      <footer className="flex flex-row justify-end sticky bottom-5 w-screen ">
+        <div className="flex justify-self-end w-auto mr-10">
+          <Link href="#hero">
+            <picture className="cursor-pointer flex items-center justify-center">
               <source
                 srcSet="https://haluskua.github.io/mywebsite/img/room5-small.jpg"
                 type="image/webp"
               />
               <img
-                className=" object-cover rounded-full border-border-[#f4faff] w-12 h-14 md:w-20 md:h-20 xl:w-28 xl:h-28 border-2 filter group-hover:grayscale transition duration-300 ease-in-out"
+                className=" object-cover rounded-full border-border-[#f4faff] w-12 h-12  border-2 filter group-hover:grayscale transition duration-300 ease-in-out"
                 src="https://haluskua.github.io/mywebsite/img/room5-small.jpg"
                 alt="Landscape picture"
-                width={100}
-                height={50}
+                width={80}
+                height={30}
               />
             </picture>
-          </div>
-        </footer>
-      </Link>
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 };

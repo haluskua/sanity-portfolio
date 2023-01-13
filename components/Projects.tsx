@@ -10,16 +10,16 @@ const Projects = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-screen w-screen relative flex overflow-hidden flex-col top-20 text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-10 uppercase tracking-[20px] text-[#f4faff] text-1.5xl xl:text-2xl font-bold">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7abba]50">
+      <div className=" relative w-full h-4/6 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin  scrollbar-thumb-[#f7abba]/40 scrollbar-thumb-rounded-lg">
         {projects.map((project, i) => (
           <div
             key={i}
-            className=" w-screen flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+            className="  flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44 "
           >
             <motion.picture
               initial={{
@@ -29,7 +29,6 @@ const Projects = (props: Props) => {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex "
             >
               <source
                 srcSet="https://haluskua.github.io/mywebsite/img/my_project_portfolio1.png"
@@ -37,9 +36,10 @@ const Projects = (props: Props) => {
               />
               <img
                 src="https://example.com/hero.jpg"
-                alt="Landscape picture"
-                width={800}
-                height={500}
+                alt="computer picture"
+                width={700}
+                height={300}
+                className="z-999"
               />
             </motion.picture>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
@@ -59,11 +59,8 @@ const Projects = (props: Props) => {
             </div>
           </div>
         ))}
-        {/* projects */}
-        {/* projects */}
-        {/* projects */}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#998471]/20 left-0 h-[450px] -skew-y-12">
+      <div className="w-full absolute top-[30%] bg-[#354564]/20 left-0 h-[450px] -skew-y-12">
         <h5 className="text-small text-[#291a1a]/70 px-10">OHK-Designs</h5>
       </div>
     </motion.div>
