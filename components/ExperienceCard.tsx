@@ -34,7 +34,7 @@ const ExperienceCard = (props: Props) => {
             alt=""
           />
         </div>
-        <p className="uppercase py-5 text-[#58abe2]">
+        <p className="uppercase py-5 text-[#58e2d0]">
           Started work ... - Ended...
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg ">
