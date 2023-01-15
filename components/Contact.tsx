@@ -2,6 +2,7 @@ import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 import { useForm, SubmitHandler } from "react-hook-form";
+import BackgroundCircle from "./BackgroundCircle";
 
 type Inputs = {
   name: string;
@@ -26,7 +27,7 @@ const Contact = (props: Props) => {
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           Always a positive journey ahead! <br />
-          <span className="underline decoration-[#f7abba]/40 font-light">
+          <span className="underline decoration-[#83a9c7]/40 font-light">
             Lets Chat
           </span>
         </h4>
@@ -47,7 +48,7 @@ const Contact = (props: Props) => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           action=""
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-fit mx-auto z-10"
         >
           <div className="flex space-x-2">
             <input
@@ -77,11 +78,12 @@ const Contact = (props: Props) => {
           />
           <button
             type="submit"
-            className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg cursor-pointer hover:bg-[#3ac446] hover:drop-shadow-3xl"
+            className="bg-[#83a9c7] py-5 px-10 rounded-md text-black font-bold text-lg cursor-pointer hover:bg-[#20c9e7] hover:drop-shadow-3xl"
           >
             Submit
           </button>
         </form>
+        <BackgroundCircle />
       </div>
     </div>
   );

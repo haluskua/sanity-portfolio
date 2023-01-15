@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import BackgroundCircle from "./BackgroundCircle";
 
 const photo =
   "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdad.fe2d3315.jpg&w=3840&q=75";
@@ -12,6 +13,8 @@ const About = (props: Props) => {
       <h3 className="absolute top-10 uppercase tracking-[20px] text-[#f4faff] text-1.5xl xl:text-2xl font-bold">
         About
       </h3>
+
+      <BackgroundCircle />
       <motion.img
         initial={{ x: -200, opacity: 0, scale: 0 }}
         whileInView={{ x: 0, opacity: 1, scale: 0.51 }}
@@ -22,7 +25,7 @@ const About = (props: Props) => {
       <div className="space-y-10 px-0 md:px-10 ">
         <h4 className="text-4xl font-semibold">
           Here is a
-          <span className="underline decoration-[#f7abba]/40 px-3 font-light">
+          <span className="underline decoration-[#237cb8]/40 px-3 font-light">
             little
           </span>
           background about me

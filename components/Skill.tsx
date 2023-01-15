@@ -21,7 +21,7 @@ function Skill({ directionLeft }: Props): ReactElement {
           type="image/webp"
         />
         <img
-          className=" object-cover rounded-full border-border-[#f4faff] w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 border-2 filter group-hover:grayscale transition duration-300 ease-in-out"
+          className=" object-cover rounded-full border-border-[#f4faff] w-24 h-auto md:w-28 md:h-28 xl:w-32 xl:h-32 border-2 filter group-hover:grayscale transition duration-300 ease-in-out"
           src="https://haluskua.github.io/mywebsite/img/room5-small.jpg"
           alt="Landscape picture"
           width={800}

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import BackgroundCircle from "./BackgroundCircle";
 
 type Props = {};
 
@@ -44,7 +45,7 @@ const Projects = (props: Props) => {
             </motion.picture>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#f7abba]/50 font-light ">
+                <span className="underline decoration-[#83a9c7]/50 font-light ">
                   Case Study {i + 1} of {projects.length}:
                 </span>
                 Portfolio clone
@@ -63,6 +64,7 @@ const Projects = (props: Props) => {
       <div className="w-full absolute top-[30%] bg-[#354564]/20 left-0 h-[450px] -skew-y-12">
         <h5 className="text-small text-[#291a1a]/70 px-10">OHK-Designs</h5>
       </div>
+      <BackgroundCircle />
     </motion.div>
   );
 };

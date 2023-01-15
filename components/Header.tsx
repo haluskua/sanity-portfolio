@@ -36,7 +36,7 @@ const Header = (props: Props) => {
           initial={{ x: 500, opacity: 0, scale: 0 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="drop-shadow-3xl min-w-max flex flex-row items-center text-[#fff9f9] cursor-pointer rounded-full  p-2 bg-[#60adf5] hover:bg-[#a7fa70] hover:text-white z-9999999"
+          className="drop-shadow-3xl min-w-max flex flex-row items-center text-[#fff9f9] cursor-pointer rounded-full  p-2 bg-[#237cb8] hover:bg-[#58abe2] hover:text-white z-9999999"
         >
           <SocialIcon
             className="cursor-pointer  h-5 w-5 mr-3 hover:animate-bounce motion-reduce"

@@ -60,3 +60,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+// Getting static props
